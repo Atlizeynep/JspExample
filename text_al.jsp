@@ -22,6 +22,7 @@
              String bolum=request.getParameter("bolum");
              String il=request.getParameter("il");
              
+    
 
              Cookie cookie_isim=new Cookie("ad",isim);
              cookie_isim.setMaxAge(60*60*24);

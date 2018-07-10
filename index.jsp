@@ -14,7 +14,7 @@
     <body>
         <h1>Login Forms</h1>
         
-        <form name="form" action="text_al.jsp" method="POST">
+        <form name="form" action="Database.jsp" method="POST">
             <table border="1">
                 <tbody>
                     <tr>
@@ -31,7 +31,7 @@
                     </tr>
                     <tr>
                         <td>İl:</td>
-                        <td><input type="text" name="il" value="" size="50" /></td> 
+                        <td><input type="text" name="sehir" value="" size="50" /></td> 
                     </tr>
                     <tr>
                         <td>Cinsiyet:</td>
