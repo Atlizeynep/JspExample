@@ -20,9 +20,9 @@
              String soyisim=request.getParameter("soyisim");
              String cinsiyet=request.getParameter("cinsiyet");
              String bolum=request.getParameter("bolum");
-             String il=request.getParameter("il");
+             String il=request.getParameter("sehir");
              
-    
+
 
              Cookie cookie_isim=new Cookie("ad",isim);
              cookie_isim.setMaxAge(60*60*24);
@@ -32,13 +32,13 @@
              cookie_cinsiyet.setMaxAge(60*60*24);
              Cookie cookie_bolum=new Cookie("bolum",bolum);
              cookie_bolum.setMaxAge(60*60*24);
-             Cookie cookie_il=new Cookie("il",il);
-             cookie_il.setMaxAge(60*60*24);
+             Cookie cookie_sehir=new Cookie("il",il);
+             cookie_sehir.setMaxAge(60*60*24);
            
              response.addCookie(cookie_isim);
              response.addCookie(cookie_soyisim);
              response.addCookie(cookie_cinsiyet);
-             response.addCookie(cookie_il);
+             response.addCookie(cookie_sehir);
              response.addCookie(cookie_bolum);
             
              
@@ -63,7 +63,7 @@
                 </tr>
                 <tr>
                     <td>İl</td>
-                    <td> <%=il %> </td>
+                    <td> <%=sehir %> </td>
                 </tr>
             </tbody>
              </table><input type="submit" value="bilgi_gor" name="Bilgileri Gör" />
