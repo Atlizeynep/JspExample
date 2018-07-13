@@ -101,7 +101,7 @@
          %>
 
 
-         <form name="Data" action="Duzenle.jsp" method="POST">
+         <form name="Data" action="Duzenle-ajax.jsp" method="POST">
              <table border="1">
             <tbody>
                 <tr>

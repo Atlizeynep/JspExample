@@ -24,9 +24,9 @@
          //   String id=request.getParameter("update_id");
             String alan_ismi=request.getParameter("update_alan");
             String guncel_bilgi=request.getParameter("update_yeni");
-            out.println(id);
-            out.println(alan_ismi);
-            out.println(guncel_bilgi);
+   //         out.println(id);
+    //        out.println(alan_ismi);
+     //       out.println(guncel_bilgi);
     //      try {
 
             String url = "jdbc:postgresql://localhost:5432/postgres";
@@ -37,11 +37,11 @@
              connection = DriverManager.getConnection(url, user, password);
            
             if (connection != null) {
-             out.println("Connected to the database postgres");
+        //     out.println("Connected to the database postgres");
              stmt = connection.createStatement();
   
              String sql="UPDATE public.deneme SET "+alan_ismi+" = '"+guncel_bilgi+"' WHERE id = "+id;
-             out.println(sql);
+        //     out.println(sql);
             stmt.executeUpdate(sql);
              stmt.close();
              connection .close();
